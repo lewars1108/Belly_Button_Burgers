@@ -105,19 +105,15 @@ function buildCharts(sample) {
         xanchor: 'center',
         y: -0.25,
         yanchor: 'center',
-        text: 'The bar chart displays the top 10 bacterial species (OTUs)<br>with the number of samples found in your belly button',
+        text: 'Displays the top 10 bacterial species <br>with the number of samples found in the belly button',
         showarrow: false
       }]
     };
-    //console.log("hello");
+
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout, {responsive: true});
 
-    // Bar and Bubble charts
-    // Create the buildCharts function.
-    //function buildCharts(sample) {
-    // Use d3.json to load and retrieve the samples.json file 
-    //d3.json("samples.json").then((data) => {
+   
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
@@ -189,7 +185,7 @@ function buildCharts(sample) {
         xanchor: 'center',
         y: 0,
         yanchor: 'center',
-        text: "The gauge displays your belly button weekly washing frequency",
+        text: "Displays belly button weekly washing frequency",
         showarrow: false
       }]
     };
